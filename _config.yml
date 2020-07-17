@@ -37,13 +37,15 @@ plugins:
 
 # pagination config
 paginate: 10
-paginate_path: "/blog/page:num/"
+paginate_path: "/blog/:title/"
 
 # markdown settings
 markdown: kramdown
-highlighter: rouge
 kramdown:
+  syntax_highlighter: rouge
   input: GFM
+  auto_ids:       true
+  toc_levels:     1..3
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

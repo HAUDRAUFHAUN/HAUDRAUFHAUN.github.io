@@ -10,9 +10,10 @@
     />
   </head>
   <body>
-    {% include _nav.html %} 
+    {% include _nav.html %}
+    <h1>{{ page.title }}</h1>
     <div class="container">
-        {{content}}
+      {{content}}
     </div>
     {% include _footer.html %}
   </body>

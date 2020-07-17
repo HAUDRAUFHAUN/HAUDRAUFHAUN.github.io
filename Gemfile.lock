@@ -11,6 +11,7 @@ GEM
     eventmachine (1.2.7-x64-mingw32)
     ffi (1.13.1-x64-mingw32)
     forwardable-extended (2.6.0)
+    github-markdown (0.6.9)
     http_parser.rb (0.6.0)
     i18n (1.8.3)
       concurrent-ruby (~> 1.0)
@@ -78,6 +79,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  github-markdown (~> 0.6.9)
   jekyll (~> 4.1.1)
   jekyll-feed (~> 0.6)
   jekyll-paginate
