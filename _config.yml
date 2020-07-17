@@ -37,7 +37,9 @@ plugins:
   - jekyll-sitemap
 
 # pagination config
-https://github.com/HAUDRAUFHAUN/HAUDRAUFHAUN.github.io
+paginate: 10
+paginate_path: "/page:num/"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
