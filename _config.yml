@@ -29,6 +29,7 @@ url: "https://haudraufhaun.github.io" # the base hostname & protocol for your si
 # twitter_username:
 github_username: haudraufhaun
 
+theme: jekyll-bulma
 # Build settings
 plugins:
   - jekyll-paginate
@@ -37,15 +38,15 @@ plugins:
 
 # pagination config
 paginate: 10
-paginate_path: "/blog/:title/"
+paginate_path: "/blog/:id/"
 
 # markdown settings
 markdown: kramdown
 kramdown:
   syntax_highlighter: rouge
   input: GFM
-  auto_ids:       true
-  toc_levels:     1..3
+  auto_ids: false
+  toc_levels: 1..3
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
