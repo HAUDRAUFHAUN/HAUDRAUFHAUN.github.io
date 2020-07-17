@@ -1,62 +1,16 @@
-<!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>haudraufhaun.github.io</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
-    />
-  </head>
-  <body>
-    <nav class="navbar is-light" role="navigation" aria-label="navigation">
-      <div class="navbar-brand">
-        <a href="/" class="navbar-item">haudraufhaun</a>
+---
+layout: default
+---
 
-        <a
-          role="button"
-          class="navbar-burger burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbar-normal"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div class="navbar-menu" id="navbar-normal">
-        <div class="navbar-start">
-          <a href="/" class="navbar-item">Home</a>
-          <a href="/blog" class="navbar-item">Blog</a>
-          <a href="/wlke" class="navbar-item">wlke</a>
-        </div>
-        <div class="navbar-end">
-          <a href="/impressum/" class="navbar-item">Impressum</a>
-        </div>
-      </div>
-    </nav>
-    <br />
-    <h1>Blog</h1>
-    <div class="container">
-      <ul>
-        {% for post in site.posts %}
-        <li>
-          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-          {{ post.excerpt }}
-        </li>
-        {% endfor %}
-      </ul>
+<div class="content">
+  <h1 class="is-size-1">Blog</h1>
+  {% for post in paginator.posts %}
+  <div class="card">
+    <div class="card-content">
+      <h2 class="is-size-2">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h2>
     </div>
-    <footer
-      class="footer"
-      style="position: fixed; left: 0; bottom: 0; width: 100%; padding: 1.5rem;"
-    >
-      <div class="content hast-text-centered">
-        <p>&copy; 2020 | <a href="/impressum/">Impressum</a></p>
-      </div>
-    </footer>
-  </body>
-</html>
+  </div>
+  {% endfor %}
+</div>
