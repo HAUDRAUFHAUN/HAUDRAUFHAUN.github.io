@@ -8,8 +8,9 @@ permalink: /blog/
   <div class="columns">
   {% for post in site.posts %}
   <div class="column">
-    <div class="card">
-      <div class="card-content">
+    <div class="box radius-is-small">
+      <article class="media">
+        <div class="media-content">
         <h3 class="is-size-4">
           <a href="{{ post.url }}" style="color: black;">{{ post.title }}</a>
         </h3>
@@ -22,17 +23,17 @@ permalink: /blog/
         <br>
         <footer class="card-footer">
           <p class="card-footer-item">
-            <span>
-              <a href="{{post.url}}">Details</a>
-            </span>
+            
+              <a href="{{post.url}}"><ion-icon name="share-social-outline" style="font-size: 25px;"></ion-icon></a>
+            
           </p>
           <p class="card-footer-item">
-            <span>
-              <a href="">Share</a>
-            </span>
+            
+              <a href="{{post.url}}"><ion-icon name="arrow-forward-circle-outline" style="font-size: 27px;"></ion-icon></a>
           </p>
         </footer>
       </div>
+      </article>
     </div>
   {% endfor %}
     </div>

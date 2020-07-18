@@ -4,3 +4,10 @@ title: "Portfolio"
 permalink: /portfolio/
 ---
 
+{% for project in site.posts %} {% if project.layout == "project" %}
+<div class="tile is-vertical is-parent">
+  <article class="tile is-child notification is-light">
+    <p class="title">{{project.title}}</p>
+  </article>
+</div>
+{% endif %} {% endfor %}
