@@ -7,8 +7,9 @@ permalink: /blog/
 <div class="content">
   <div class="columns">
   {% for post in site.posts %}
-  {% if project.layout == "project" %}
-  {% endif %}
+  {% if post.layout == "project" %}
+    <div></div>
+  {% elsif post.layout=="post" %}
   <div class="column">
     <div class="box radius-is-small">
       <article class="media">
@@ -37,6 +38,7 @@ permalink: /blog/
       </div>
       </article>
     </div>
+    {% endif %}
   {% endfor %}
     </div>
     </div>
