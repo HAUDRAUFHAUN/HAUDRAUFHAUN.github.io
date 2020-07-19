@@ -1,39 +1,102 @@
-<nav class="navbar is-light" role="navigation" aria-label="main navigation">
+<nav class="navbar is-light">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
       haudraufhaun
     </a>
-
-    <a
-      role="button"
+    <div
       class="navbar-burger burger"
-      aria-label="menu"
-      aria-expanded="false"
-      data-target="navbarBasicExample"
+      data-target="navbarExampleTransparentExample"
     >
-      <span aria-hidden="false"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
     <div class="navbar-start">
-      <a href="/" class="navbar-item">
+      <a class="navbar-item" href="/">
         Home
       </a>
-
-      <a href="/blog/" class="navbar-item">
+      <a class="navbar-item" href="/blog/">
         Blog
       </a>
-
-      <a href="/portfolio/" class="navbar-item">
-        Portolio
+      <a class="navbar-item" href="/portfolio/">
+        Portfolio
       </a>
-
-      <a href="/wlke/" class="navbar-item">
+      <a class="navbar-item" href="/wlke/">
         wlke
       </a>
     </div>
   </div>
 </nav>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", () => {
+    let navbarBurger = document.querySelector(".navbar-burger");
+    let navbarMenu = document.querySelector(".navbar-menu");
+    if (navbarBurger && navbarMenu) {
+      navbarBurger.addEventListener("click", function () {
+        navbarBurger.classList.toggle("is-active");
+        if (navbarBurger.classList.contains("is-active")) {
+          navbarMenu.style.display = "block";
+          if (navbarMenu.querySelectorAll("a[href]")) {
+            [].forEach.call(navbarMenu.querySelectorAll("a[href]"), function (
+              navURL
+            ) {
+              navURL.addEventListener("click", function () {
+                navbarMenu.style.display = "none";
+                navbarBurger.classList.remove("is-active");
+              });
+            });
+          }
+        } else navbarMenu.style.display = "none";
+      });
+    }
+    if (document.querySelectorAll(".navbar-dropdown")) {
+      [].forEach.call(document.querySelectorAll(".navbar-dropdown"), function (
+        elDrop
+      ) {
+        elDrop.style.display = "none";
+      });
+    }
+    if (document.querySelectorAll(".navbar-link")) {
+      [].forEach.call(document.querySelectorAll(".navbar-link"), function (
+        elLink
+      ) {
+        if (elLink.classList.contains("is-active"))
+          elLink.classList.toggle("is-active");
+        if (
+          elLink.nextElementSibling.classList.contains("navbar-dropdown") &&
+          elLink.nextElementSibling.hasChildNodes()
+        ) {
+          elLink.addEventListener("click", function () {
+            elLink.classList.toggle("is-active");
+            if (
+              elLink.classList.contains("is-active") &&
+              elLink.nextElementSibling.style.display === "none"
+            )
+              elLink.nextElementSibling.style.display = "block";
+            else if (
+              !elLink.classList.contains("is-active") &&
+              elLink.nextElementSibling.style.display === "block"
+            )
+              elLink.nextElementSibling.style.display = "none";
+            [].forEach.call(elLink.nextElementSibling.childNodes, function (
+              siblingChild
+            ) {
+              siblingChild.addEventListener("click", function () {
+                siblingChild.parentNode.style.display = "none";
+                if (elLink.classList.contains("is-active"))
+                  elLink.classList.toggle("is-active");
+              });
+            });
+          });
+          elLink.nextElementSibling.addEventListener("mouseleave", function () {
+            elLink.nextElementSibling.style.display = "none";
+            if (elLink.classList.contains("is-active"))
+              elLink.classList.toggle("is-active");
+          });
+        }
+      });
+    }
+  });
+</script>
