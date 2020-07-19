@@ -3,5 +3,24 @@ layout: default
 ---
 
 <div class="content">
+  <h5 class="is-size-5">Links</h5>
+  <div class="columns">
+    <div class="column">
+      <a href="{{page.github-repo}}" class="button is-light">
+        <ion-icon name="logo-github" style="margin-right: 5px;"></ion-icon>
+        GitHub-Repo
+      </a>
+    </div>
+    <div class="column">
+      <a href="{{page.docs}}" class="button is-light">
+        <ion-icon
+          name="document-text-outline"
+          style="margin-right: 5px;"
+        ></ion-icon>
+        Dokumentation
+      </a>
+    </div>
+  </div>
+  <hr />
   {{content}}
 </div>
