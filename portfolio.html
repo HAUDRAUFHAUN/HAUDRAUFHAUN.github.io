@@ -7,7 +7,21 @@ permalink: /portfolio/
 {% for project in site.posts %} {% if project.layout == "project" %}
 <div class="tile is-vertical is-parent">
   <article class="tile is-child notification is-light">
-    <p class="title">{{project.title}}</p>
+    <div class="columns">
+      <div class="column is-11">
+        <p class="title">{{project.title}}</p>
+        <p class="subtitle">{{project.descr}}</p>
+      </div>
+      <div class="column is-end">
+        <br />
+        <a href="{{project.url}}"
+          ><ion-icon
+            name="arrow-forward-circle-outline"
+            style="font-size: 40px;"
+          ></ion-icon
+        ></a>
+      </div>
+    </div>
   </article>
 </div>
 {% endif %} {% endfor %}
