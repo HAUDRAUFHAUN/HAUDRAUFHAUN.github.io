@@ -39,13 +39,14 @@ Dieser `Simple-Blog` wurde mit dem Framework `React` für die Programmiersprache
 
 ### weiterführende Links
 
-<ion-icon name="logo-github" style="font-size: 32px;"></ion-icon> <a href="https://github.com/HAUDRAUFHAUN/simple-blog-react">GitHub Repository</a>
+<a href="https://github.com/HAUDRAUFHAUN/simple-blog-react" class="button is-light"><ion-icon name="logo-github" style="font-size: 32px;"></ion-icon> GitHub Repository</a>
 
 <ion-icon name="document-text-outline" style="font-size: 32px;"></ion-icon> <a href="https://haudraufhaun.github.io/simple-blog-react/">Project-Docs</a>
 
 <ion-icon name="document-text-outline" style="font-size: 32px;"></ion-icon> <a href="https://reactjs.org/">Framework-Docs</a>
 
 ## Simple-Blog `PHP`
+
 Dieser `Simple-Blog` wurde mit dem Framework `Laravel` für die Programmiersprache `PHP` entwickelt.
 
 ### Features
