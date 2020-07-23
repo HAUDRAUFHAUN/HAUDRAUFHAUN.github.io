@@ -6,9 +6,7 @@ permalink: /blog/
 
 <div class="content">
   {% for post in site.posts %}
-  {% if post.layout == "project" %}
-    <div></div>
-  {% elsif post.layout=="post" %}
+  {% if post.layout=="post" %}
     <div class="box radius-is-small">
       <article class="media">
         <div class="media-content">
