@@ -22,11 +22,11 @@ Dieser `Simple-Blog` wurde mit dem Webframework `Django` für die Programmierspr
 
 ### weiterführende Links
 
-<ion-icon name="logo-github" style="font-size: 32px;"></ion-icon> <a href="https://github.com/HAUDRAUFHAUN/simple-blog-django">GitHub Repository</a>
+<a href="https://github.com/HAUDRAUFHAUN/simple-blog-django" class="button is-light"><ion-icon name="logo-github" style="font-size: 16px;"></ion-icon> GitHub Repository</a>
 
-<ion-icon name="document-text-outline" style="font-size: 32px;"></ion-icon> <a href="https://haudraufhaun.github.io/simple-blog-django/">Project-Docs</a>
+<a href="https://haudraufhaun.github.io/simple-blog-django/" class="button is-light"><ion-icon name="document-text-outline" style="font-size: 16px;"></ion-icon> Project-Docs</a>
 
-<ion-icon name="document-text-outline" style="font-size: 32px;"></ion-icon> <a href="https://djangoproject.com">Framework-Docs</a>
+<a href="https://djangoproject.com" class="button is-light"><ion-icon name="document-text-outline" style="font-size: 16px;"></ion-icon> Framework-Docs</a>
 
 ## Simple-Blog `React`
 
@@ -39,11 +39,11 @@ Dieser `Simple-Blog` wurde mit dem Framework `React` für die Programmiersprache
 
 ### weiterführende Links
 
-<a href="https://github.com/HAUDRAUFHAUN/simple-blog-react" class="button is-light"><ion-icon name="logo-github" style="font-size: 32px;"></ion-icon> GitHub Repository</a>
+<a href="https://github.com/HAUDRAUFHAUN/simple-blog-react" class="button is-light"><ion-icon name="logo-github" style="font-size: 16px;"></ion-icon> GitHub Repository</a>
 
-<ion-icon name="document-text-outline" style="font-size: 32px;"></ion-icon> <a href="https://haudraufhaun.github.io/simple-blog-react/">Project-Docs</a>
+<a href="https://haudraufhaun.github.io/simple-blog-react/" class="button is-light"><ion-icon name="document-text-outline" style="font-size: 16px;"></ion-icon> Project-Docs</a>
 
-<ion-icon name="document-text-outline" style="font-size: 32px;"></ion-icon> <a href="https://reactjs.org/">Framework-Docs</a>
+<a href="https://reactjs.org/" class="button is-light"><ion-icon name="document-text-outline" style="font-size: 16px;"></ion-icon> Framework-Docs</a>
 
 ## Simple-Blog `PHP`
 
@@ -55,8 +55,8 @@ Dieser `Simple-Blog` wurde mit dem Framework `Laravel` für die Programmiersprac
 
 ### weiterführende Links
 
-<ion-icon name="logo-github" style="font-size: 32px;"></ion-icon> <a href="https://github.com/HAUDRAUFHAUN/simple-blog-php">GitHub Repository</a>
+<a href="https://github.com/HAUDRAUFHAUN/simple-blog-php" class="button is-light"><ion-icon name="logo-github" style="font-size: 16px;"></ion-icon> GitHub Repository</a>
 
-<ion-icon name="document-text-outline" style="font-size: 32px;"></ion-icon> <a href="https://haudraufhaun.github.io/simple-blog-php/">Project-Docs</a>
+<a href="https://haudraufhaun.github.io/simple-blog-php/" class="button is-light"><ion-icon name="document-text-outline" style="font-size: 16px;"></ion-icon> Project-Docs</a>
 
-<ion-icon name="document-text-outline" style="font-size: 32px;"></ion-icon> <a href="https://laravel.com">Framework-Docs</a>
+<a href="https://laravel.com"class="button is-light"><ion-icon name="document-text-outline" style="font-size: 16px;"></ion-icon> Framework-Docs</a>
