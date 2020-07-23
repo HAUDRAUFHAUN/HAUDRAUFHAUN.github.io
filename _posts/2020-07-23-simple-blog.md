@@ -3,7 +3,7 @@ layout: project
 title: "Simple-Blog"
 tags: ["python", "django", "react", "javascript", "php", "laravel"]
 descr: "Ein Portfolioprojekt"
-github-repo: "https://github.com/HAUDRAUFHAUN/
+github-repo: "https://github.com/HAUDRAUFHAUN/"
 docs: "https://haudraufhaun.github.io/"
 ---
 
