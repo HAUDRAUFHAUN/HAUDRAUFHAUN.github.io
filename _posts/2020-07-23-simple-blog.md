@@ -1,10 +1,10 @@
 ---
 layout: project
-title: "wlke"
+title: "Simple-Blog"
 tags: ["python", "django", "react", "javascript", "php", "laravel"]
 descr: "Ein Portfolioprojekt"
 github-repo: "https://github.com/HAUDRAUFHAUN/
-docs: "/wlke/"
+docs: "https://haudraufhaun.github.io/"
 ---
 
 Simple-Blog ist ein Projekt, in dem ich einfache Blogwebsites mit unterschiedlichen Technologien entwickel/entwickelt habe.
