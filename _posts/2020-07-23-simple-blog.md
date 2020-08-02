@@ -59,4 +59,4 @@ Dieser `Simple-Blog` wurde mit dem Framework `Laravel` für die Programmiersprac
 
 <a href="https://haudraufhaun.github.io/simple-blog-php/" class="button is-light"><ion-icon name="document-text-outline" style="font-size: 16px;"></ion-icon> Project-Docs</a>
 
-<a href="https://laravel.com"class="button is-light"><ion-icon name="document-text-outline" style="font-size: 16px;"></ion-icon> Framework-Docs</a>
+<a href="https://laravel.com" class="button is-light"><ion-icon name="document-text-outline" style="font-size: 16px;"></ion-icon> Framework-Docs</a>
