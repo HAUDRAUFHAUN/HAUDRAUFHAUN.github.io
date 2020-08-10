@@ -45,6 +45,8 @@ kramdown:
   input: GFM
   auto_ids: false
   toc_levels: 1..3
+
+google_site_verification: google-site-verification=38ixu51lE42zuHRBCBnFK1XnyziPPPhffYjaIiOzP1M
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
