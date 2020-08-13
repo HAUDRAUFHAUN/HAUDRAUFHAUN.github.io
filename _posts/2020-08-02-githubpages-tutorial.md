@@ -182,7 +182,7 @@ Du kannst auch deine eigene Navbar entwickeln, die (leider englische) Dokumentat
 5. Nun wollen wir die Navbar in unser `index.html` Datei importieren: Dazu öffnen wir `index.html` und fügen über `<section class="section">` die Zeile
 
 <code>
-{ % include _navbar.html % }
+{% include _navbar.html %}
 </code>
 
 hinzu, die dann die Navbar importiert. Wenn wir uns nun im Browser unsere Seite neu laden können wir in etwa folgendes sehen:
