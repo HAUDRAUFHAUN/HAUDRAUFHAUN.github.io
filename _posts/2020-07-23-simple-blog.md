@@ -16,7 +16,7 @@ Dieser `Simple-Blog` wurde mit dem Webframework `Django` für die Programmierspr
 
 ### Features
 
-- Markdown Syntax Support für erstellte Artikel
+- Rich-Text-Editor zum erstellen der Artikel
 - Bereitstellung der Artikel als Atom-Newsfeed (`comming soon`)
 - einfacher, cleaner Deploy zum selber benutzen mit `Docker` (`comming soon`)
 
@@ -44,19 +44,3 @@ Dieser `Simple-Blog` wurde mit dem Framework `React` für die Programmiersprache
 <a href="https://haudraufhaun.github.io/simple-blog-react/" class="button is-light"><ion-icon name="document-text-outline" style="font-size: 16px;"></ion-icon> Project-Docs</a>
 
 <a href="https://reactjs.org/" class="button is-light"><ion-icon name="document-text-outline" style="font-size: 16px;"></ion-icon> Framework-Docs</a>
-
-## Simple-Blog `PHP`
-
-Dieser `Simple-Blog` wurde mit dem Framework `Laravel` für die Programmiersprache `PHP` entwickelt.
-
-### Features
-
-- einfacher, cleaner Deploy zum selber benutzen mit `Docker` (`comming soon`)
-
-### weiterführende Links
-
-<a href="https://github.com/HAUDRAUFHAUN/simple-blog-php" class="button is-light"><ion-icon name="logo-github" style="font-size: 16px;"></ion-icon> GitHub Repository</a>
-
-<a href="https://haudraufhaun.github.io/simple-blog-php/" class="button is-light"><ion-icon name="document-text-outline" style="font-size: 16px;"></ion-icon> Project-Docs</a>
-
-<a href="https://laravel.com" class="button is-light"><ion-icon name="document-text-outline" style="font-size: 16px;"></ion-icon> Framework-Docs</a>
