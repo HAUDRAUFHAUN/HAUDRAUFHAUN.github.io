@@ -4,6 +4,33 @@ title: "Portfolio"
 permalink: /portfolio/
 ---
 
+<h1 class="is-size-3">Skills</h1>
+<!--here progress bar with skills-->
+<span class="tag is-link mb-1">Python</span><br /><progress
+  class="progress is-link"
+  value="50"
+  max="100"
+  >50%</progress
+>
+
+<span class="tag is-success is-light mb-1">Django Webframework (Python)</span
+><br /><progress class="progress is-success is-light" value="70" max="100"
+  >70%</progress
+>
+<span class="tag is-danger mb-1">HTML</span><br /><progress
+  class="progress is-danger"
+  value="80"
+  max="100"
+  >80%</progress
+>
+<span class="tag is-warning is-light mb-1">Jekyll (Ruby)</span>
+<br />
+<progress class="progress is-warning is-light" value="75" max="100"
+  >75%</progress
+>
+
+<br />
+<h1 class="is-size-3">Projekte</h1>
 {% for project in site.posts %} {% if project.layout == "project" %}
 <div class="tile is-vertical is-parent">
   <article class="tile is-child notification is-light">
