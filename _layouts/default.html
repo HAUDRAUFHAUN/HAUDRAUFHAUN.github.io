@@ -25,6 +25,7 @@
     _warning.html %} {% endif %} -->
     <section class="section" style="margin-top: 0.2rem; margin-bottom: 1.5rem;">
       <div class="container content">
+      <button id="darkmaker" class="button is-dark">Ändere Theme</button>
         {% if page.title != "404" %}
         <h1 class="title">{{ page.title }}</h1>
         {% endif %}
@@ -37,13 +38,12 @@
     {% include _footer.html %}
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script>
-      document.onkeypress = function (e) {
-        e = e || window.event;
-        
-        if(e.keyCode === 13) {
-          document.documentElement.classList.toggle('dark-mode');
-        }
-      }
+      var button = document.querySelector("#darkmaker");
+      
+      button.addEventListener("click", function() {
+        document.documentElement.classList.toggle('dark-mode');
+      });  
+      
     </script>
   </body>
 </html>
