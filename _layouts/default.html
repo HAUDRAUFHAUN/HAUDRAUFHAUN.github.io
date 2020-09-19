@@ -38,11 +38,11 @@
     {% include _footer.html %}
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script>
-      var button = document.querySelector("#darkmaker");
+      var button = document.getElementById("darkmaker");
       
-      button.addEventListener("click", function() {
+      button.onclick = function() {
         document.documentElement.classList.toggle('dark-mode');
-      });  
+      };  
       
     </script>
   </body>
