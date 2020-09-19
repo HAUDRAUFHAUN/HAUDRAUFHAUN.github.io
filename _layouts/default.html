@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
     />
+    <link rel="stylesheet" src="./style.css" />
     <title>haudraufhaun.github.io | {{page.title}}</title>
     <link rel="icon" href="/assets/images/programmierProfilbild.png" />
   </head>
@@ -35,5 +36,14 @@
     <br />
     {% include _footer.html %}
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script>
+      document.onkeypress = function (e) {
+        e = e || window.event;
+        
+        if(e.keyCode === 13) {
+          document.documentElement.classList.toggle('dark-mode');
+        }
+      }
+    </script>
   </body>
 </html>
