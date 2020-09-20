@@ -10,6 +10,7 @@
   <link rel="stylesheet" src="./style.css" />
   <title>haudraufhaun.github.io | {{page.title}}</title>
   <link rel="icon" href="/assets/images/programmierProfilbild.png" />
+  <script src="jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
   <!-- {% if page.title != "404" %} {% include
     _warning.html %} {% endif %} -->
   <section class="section" style="margin-top: 0.2rem; margin-bottom: 1.5rem;">
-    <div class="container content">
+    <div class="container content" id="divone">
       <button id="darkmaker" class="button is-dark">Ändere Theme</button>
       {% if page.title != "404" %}
       <h1 class="title">{{ page.title }}</h1>
@@ -37,10 +38,8 @@
   <script>
     let button = document.querySelector('#darkmaker')
 
-    button.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark-mode')
-    })
-
+    $("#darkmaker").click(function(){
+      $("#divone").addClass("dark-mode");});
   </script>
 </body>
 
