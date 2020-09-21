@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="JUykivzbuZpjMUAutJLW7S6_KaRQk8jdzUWXbu7C6Rc"
+    />
+    <meta name="description" content="Dies ist die Website von haudraufhaun" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" type="text/css" src="/assets/css/styles.css" />
+    <title>haudraufhaun.github.io | {{page.title}}</title>
+    <link rel="icon" href="/assets/images/programmierProfilbild.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="JUykivzbuZpjMUAutJLW7S6_KaRQk8jdzUWXbu7C6Rc" />
-  <meta name="description" content="Dies ist die Website von haudraufhaun" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" />
-  <link rel="stylesheet" src="./style.css" />
-  <title>haudraufhaun.github.io | {{page.title}}</title>
-  <link rel="icon" href="/assets/images/programmierProfilbild.png" />
-</head>
-
-<body>
-  <noscript>
-    <strong>Du musst JavaScript aktivieren, um diese Website zu nutzen! || You have to enable JavaScript to use this
-      website!</strong>
-  </noscript>
-  {% include _nav.html %}
-  <!-- {% if page.title != "404" %} {% include
+  <body>
+    <noscript>
+      <strong
+        >Du musst JavaScript aktivieren, um diese Website zu nutzen! || You have
+        to enable JavaScript to use this website!</strong
+      >
+    </noscript>
+    {% include _nav.html %}
+    <!-- {% if page.title != "404" %} {% include
     _warning.html %} {% endif %} -->
-  <section class="section" style="margin-top: 0.2rem; margin-bottom: 1.5rem;">
-    <div class="container content" id="divone">
-      <button id="darkmaker">Ändere Theme</button>
-      {% if page.title != "404" %}
-      <h1 class="title">{{ page.title }}</h1>
-      {% endif %}
-      <br />
-      {{content}}
-    </div>
-  </section>
-  <br />
-  <br />
-  {% include _footer.html %}
-  <script>
-    let button = document.querySelector('#darkmaker')
+    <section class="section" style="margin-top: 0.2rem; margin-bottom: 1.5rem">
+      <div class="container content" id="divone">
+        <!-- change Theme Button: <button id="darkmaker">Ändere Theme</button> -->
+        {% if page.title != "404" %}
+        <h1 class="title">{{ page.title }}</h1>
+        {% endif %}
+        <br />
+        {{content}}
+      </div>
+    </section>
+    <br />
+    <br />
+    {% include _footer.html %}
+    <script>
+      let button = document.querySelector("#darkmaker");
 
-    // press the button to toggle the .dark-mode class
-    button.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark-mode')
-    })
-  </script>
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-</body>
-
+      // press the button to toggle the .dark-mode class
+      button.addEventListener("click", () => {
+        console.log("🚀 Button toggled");
+        document.documentElement.classList.toggle("dark-mode");
+      });
+    </script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  </body>
 </html>
