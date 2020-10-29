@@ -28,19 +28,3 @@ Dieser `Simple-Blog` wurde mit dem Webframework `Django` für die Programmierspr
 
 <a href="https://djangoproject.com" class="button is-light"><ion-icon name="document-text-outline" style="font-size: 16px;"></ion-icon> Framework-Docs</a>
 
-## Simple-Blog `React`
-
-Dieser `Simple-Blog` wurde mit dem Framework `React` für die Programmiersprache `Javascript` entwickelt.
-
-### Features
-
-- speziell optimiert für Mobilansichten
-- einfacher, cleaner Deploy zum selber benutzen mit `Firebase` (`comming soon`)
-
-### weiterführende Links
-
-<a href="https://github.com/HAUDRAUFHAUN/simple-blog-react" class="button is-light"><ion-icon name="logo-github" style="font-size: 16px;"></ion-icon> GitHub Repository</a>
-
-<a href="https://haudraufhaun.github.io/simple-blog-react/" class="button is-light"><ion-icon name="document-text-outline" style="font-size: 16px;"></ion-icon> Project-Docs</a>
-
-<a href="https://reactjs.org/" class="button is-light"><ion-icon name="document-text-outline" style="font-size: 16px;"></ion-icon> Framework-Docs</a>
