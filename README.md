@@ -1,25 +1,8 @@
-# routify-starter
+# haudraufhaun.github.io
 
-Starter template for [Routify](https://github.com/sveltech/routify).
+My personal website based on [Routify](https://github.com/sveltech/routify).
 
-### Get started
-
-#### Starter templates
-| Template                                  | Description                                                 |
-|-------------------------------------------|-------------------------------------------------------------|
-| [master](https://example.routify.dev/)    | Default template, includes examples folder                  |
-| [blog](https://blog-example.routify.dev/) | Generates a blog from local markdown posts. Includes mdsvex |
-| [auth](https://auth-example.routify.dev/) | Embedded login on protected pages. Includes Auth0           |
-
-To use a template, run:
-
-`npx @sveltech/routify init`
-
-or
-
-`npx @sveltech/routify init --branch <branch-name>`
-
-The above commands will populate the current directory, they don't create a new one.
+### developer notes
 
 ### npm scripts
 
@@ -52,15 +35,6 @@ See [src/pages/example/api/[showId].svelte](https://github.com/sveltech/routify-
 * For SPA or SSR apps please make sure that url rewrite is enabled on the server.
 * For SPA redirect to `__app.html`.
 * For SSR redirect to the lambda function or express server.
-
-### Typescript
-
-For Typescript, we recommend [@lamualfa](https://github.com/lamualfa) excellent [routify-ts](https://github.com/lamualfa/routify-ts/)
-
-New project: `npx routify-ts init <project-name> [routify-init-args]`
-
-Existing project: `npx routify-ts convert [project-directory]`
-
 
 ### Issues?
 
