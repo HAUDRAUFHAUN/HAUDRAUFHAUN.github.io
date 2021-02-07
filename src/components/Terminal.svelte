@@ -11,18 +11,24 @@
     <div class="mt-4 flex justify-start">
       <span class="text-green-400">computer:~$</span>
       <p class="pl-2 typewriter">
-        echo "Hello there 👋🏻"
+        echo <span class="text-yellow-300">"Hello there 👋🏻"</span>
         <br />
       </p>
     </div>
     <div class="mt-4 flex justify-start">
-      <span class="text-green-400">computer:~$</span>
+      <p class="pl-2 prompt">
+        <span class="text-yellow-300">"Hello there 👋🏻"</span>
+        <br />
+      </p>
+    </div>
+    <div class="mt-4 flex justify-start">
+      <span class="text-green-400 prompt-2">computer:~$</span>
       <p class="pl-2 typewriter-2">
         apt-get social-media
         <br />
       </p>
     </div>
-    <div class="mt-4 flex">
+    <div class="mt-4 flex prompt-3">
       <div
         class="pl-2 flex flex-row align-middle space-x-4 max-w-full flex-wrap"
       >
@@ -132,8 +138,41 @@
     white-space: nowrap; /* Keeps the content on a single line */
     opacity: 0;
     animation: typing-2 3.5s steps(19, end), blink-caret 0.75s;
+    animation-delay: 6.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .prompt {
+    opacity: 0;
+    animation: prompt 1s steps(1, end);
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+  }
+
+  .prompt-2 {
+    opacity: 0;
+    animation: prompt 1s steps(1, end);
     animation-delay: 5s;
     animation-fill-mode: forwards;
+  }
+
+  .prompt-3 {
+    opacity: 0;
+    animation: prompt 1s steps(1, end);
+    animation-delay: 11.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes prompt {
+    0% {
+      opacity: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   /* The typing effect */
