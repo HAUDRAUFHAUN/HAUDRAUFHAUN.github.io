@@ -17,13 +17,15 @@
     </div>
     <div class="mt-4 flex justify-start">
       <span class="text-green-400">computer:~$</span>
-      <p class="pl-2 typewriter">
+      <p class="pl-2 typewriter-2">
         apt-get social-media
         <br />
       </p>
     </div>
     <div class="mt-4 flex">
-      <div class="pl-2 flex flex-row align-middle space-x-4 max-w-full">
+      <div
+        class="pl-2 flex flex-row align-middle space-x-4 max-w-full flex-wrap"
+      >
         <div class="flex flex-row space-x-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -119,17 +121,48 @@
 <style>
   .typewriter {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation: typing 3.5s steps(19, end), blink-caret 0.75s ease-out;
+  }
+
+  .typewriter-2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: 0.15em solid white; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
-    animation: typing 3.5s steps(20, end), blink-caret 0.75s step-end infinite;
+    opacity: 0;
+    animation: typing-2 3.5s steps(19, end), blink-caret 0.75s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
   }
 
   /* The typing effect */
   @keyframes typing {
     0% {
       width: 0%;
+      border-right: 0.15em solid white;
+    }
+    40% {
+      width: 0%;
     }
     100% {
+      width: 13%;
+    }
+  }
+  @keyframes typing-2 {
+    0% {
+      width: 0%;
+      border-right: 0.15em solid white;
+    }
+    1% {
+      opacity: 1;
+    }
+    40% {
+      width: 0%;
+      border-right: 0.15em solid white;
+    }
+    100% {
+      opacity: 1;
       width: 13%;
     }
   }
@@ -146,7 +179,7 @@
   }
 
   @media (max-width: 640px) {
-    @keyframes typing {
+    @keyframes typewriter {
       0% {
         width: 0%;
       }
